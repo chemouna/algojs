@@ -30,5 +30,3 @@ function dumpObjectIndented(obj, indent) {
     }
     return result.replace(/,\n$/, "");
 }
-
-
