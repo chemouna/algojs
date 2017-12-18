@@ -23,6 +23,7 @@ function solution1(M) {
 function solution2(M) {
     var n = M.length - 1;
 
+    // handles boundary row and column values so that we dont need to handle edge cases there
     for(var i = n - 1; i >= 0; i--) {
         M[n][i] += M[n][i + 1];
         M[i][n] += M[i + 1][n];
